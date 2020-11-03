@@ -7,7 +7,11 @@ public class Area {
     int h;
     void calcAndPrint(){
         int sum = w* h;
-        System.out.println("sum");
+        System.out.println(sum);
     }    
+        void calcNotPrint(){
+        int sum = w* h;
+        return sum;
+    } 
     
 }
