@@ -9,7 +9,7 @@ public class Area {
         int sum = w* h;
         System.out.println(sum);
     }    
-        void calcNotPrint(){
+        int calcNotPrint(){
         int sum = w* h;
         return sum;
     } 
