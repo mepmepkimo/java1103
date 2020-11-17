@@ -27,8 +27,11 @@ public class MathUtil {
         double sd = Math.sqrt((1.0 / values.length) * diff_sum);
         return sd;
     }
-//變異係數
-    
+
+       // 變異係數
+    public static double cv(double sd, double avg) {
+        return sd / avg;
+    } 
     // 變異係數
     public static double cv(double[] values) {
         double sd = sd(values);
