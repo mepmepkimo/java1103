@@ -8,4 +8,7 @@ public class Bicycle extends Transportation {
         setKm(km);
         setPrice(price);
     }
+    public  void message(){
+        System.out.println("早上九點可以騎到晚上九點");
+    }
 }
