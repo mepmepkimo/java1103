@@ -13,11 +13,7 @@ public class Chihuahua extends Dog {
 
     private int price;
 
-    public Chihuahua(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setPrice(int price) {
+    public Chihuahua(int price) {
         this.price = price;
     }
 

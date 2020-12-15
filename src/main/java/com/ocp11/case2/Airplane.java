@@ -1,10 +1,12 @@
+
 package com.ocp11.case2;
 
-public class Airplane implements Game {
 
+public class Airplane extends Game{
     @Override
-    void play() {
-        System.out.println("玩飛機遊戲");
+    void play(){
+        System.out.println("飛機遊戲");
     }
+    
     
 }

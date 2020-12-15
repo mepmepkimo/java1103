@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.ocp11.case1;
 
-/**
- *
- * @author MB-study
- */
+
 public interface Game {
+    void play();
+    default int price(){
+        return 99;
+        
+    }
+    default void copyRight(){
+        System.out.println("版權所有");
+    }
     
 }

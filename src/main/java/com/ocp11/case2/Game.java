@@ -1,15 +1,15 @@
 package com.ocp11.case2;
 
-public interface Game {
-
-    void play();
-    default int price() {
+public abstract class Game {
+    public int price(){
         return 99;
+        
     }
-
-    //多做一格個COPYRIGHT方法
-    default void copyRight() {
-        System.out.println("版權所有 ");
+    abstract void play();
+        //多做一個COPYRIGHT方法
+    public void copyRight(){
+        System.out.println("版權所有");
     }
+    
 
 }

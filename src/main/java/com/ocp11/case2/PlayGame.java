@@ -1,4 +1,4 @@
-  
+
 package com.ocp11.case2;
 
 public class PlayGame {
@@ -7,4 +7,5 @@ public class PlayGame {
         game.play();
         System.out.println(game.price());
     }
+    
 }
