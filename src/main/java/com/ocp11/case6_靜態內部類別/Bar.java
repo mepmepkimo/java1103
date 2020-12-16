@@ -1,8 +1,9 @@
 package com.ocp11.case6_靜態內部類別;
 
 public class Bar {
+    int x =100;
     //靜態內部類別
-    //可以有STATIC成員與INSTANCE成員
+    //可以有static成員 與 instance成員
 
     public static class Foo {
 
@@ -13,15 +14,13 @@ public class Bar {
         public void hello() {
             System.out.println("I am Hello");
         }
-    }
 
-    //一般內部類別
-    //只能有INSTANCE成員
-    public class Hoo {
+        public class Hoo {
 
-        public void hello() {
-            System.out.println("I am Hello");;
-            Foo.printMe();
+            public void hello() {
+                System.out.println("I am Hello");
+                Foo.printMe();
+            }
         }
     }
 }

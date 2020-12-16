@@ -6,7 +6,7 @@ public class Bar {
 
     public void hello() {
         
-        final int x = 100;
+        final int x = 100;//在JAVA8之後就可以不用加FINAL
         //x++;
         class Foo {
 
