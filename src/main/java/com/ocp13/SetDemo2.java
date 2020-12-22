@@ -19,6 +19,20 @@ public class SetDemo2 {
             System.out.println("加入 ==>" + n);
         }
         System.out.println(set);
+        //彩球號碼總和?
+        //Java 7 for-loop
+        int sum=0;
+        for(Object obj : set){
+            if(obj instanceof Integer){
+                sum +=(Integer)obj;
+            }
+        }
+        System.out.println(sum);
+        //Java 8
+        int sum2=set.stream().mapToInt(e -> ((Integer)e).intValue()).sum();
+        int sum3=set.stream().mapToInt(e -> (Integer)e).sum();//Java5 之後可以省略intValue()的調用
+        System.out.println(sum2);
+        System.out.println(sum3);
     }
 
 }
