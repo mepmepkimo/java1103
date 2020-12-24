@@ -3,12 +3,22 @@ package com.ocp13;
 import com.github.javafaker.Faker;
 import java.util.Random;
 
-public class Exam {
+public class Exam implements Comparable<Exam>{
     private String name; // 姓名
     private int chinese; // 國文成績
     private int english; // 英文成績
     private int math; // 數學成績
     private boolean sex; // 男:true, 女:false
+
+    @Override
+    public int compareTo(Exam o) {
+        //總分由大到小比
+        int sum = chinese+english+math;
+        int sum2 = o.chinese+o.english+o.math;
+        return sum2 - sum;
+        //return o.chinese-chinese;//我減別人就是由小到大 別人減我由小到大
+        //return o.chinese-chinese;//別人減我由小到大
+    }
 
     public Exam() {
         Faker faker = new Faker();
