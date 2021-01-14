@@ -14,7 +14,7 @@ public class Runner extends Thread{
     public void job() {
         String name = Thread.currentThread().getName();
         for(int i=1; i<=3000;i++){
-            System.out.println("%s跑了 %d 公尺\n");
+            System.out.printf("%s跑了 %d 公尺\n",name,i);
             
         }
     }
