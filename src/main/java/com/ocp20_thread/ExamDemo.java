@@ -5,7 +5,6 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.FutureTask;
 
 class  Runner implements Runnable{
 
@@ -28,7 +27,7 @@ class Caller implements Callable<String>{
 
 
 public class ExamDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Runner runner= new Runner();
         Caller caller = new Caller();
         ExecutorService es=Executors.newFixedThreadPool(2);
