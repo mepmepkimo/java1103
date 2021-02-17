@@ -26,6 +26,9 @@ public class SetDemo {
         //Java 8 foreach
         set.forEach(e-> System.out.println(e));
         set.forEach(System.out::println);
+        
+        //資料長度(元素個數)
+        System.out.println(set.size());
 
     }
 }
